@@ -413,6 +413,10 @@
         "key": "ctrl+shift+alt+[",
         "command": "workbench.action.activityBarLocation.hide"
     },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
     // * ===========
     // * Extensions
     // * =========
@@ -509,7 +513,7 @@
     {
         "key": "alt+a",
         "command": "-vscode-better-align.align",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus"
     },
     // * [Todo Tree]
     {
@@ -624,14 +628,12 @@
         "when": "editorHasSelection"
     },
     {
-        "key": "ctrl+shift+w",
-        "command": "wrap.with",
-        "when": "editorHasSelection"
-    },
-    // * [PHP Constructor]
-    {
         "key": "shift+alt+i",
         "command": "phpConstructor.insert"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "wrap.with.if"
     },
     // * [Laraphense]
     {
@@ -662,5 +664,13 @@
     {
         "key": "ctrl+alt+e",
         "command": "laraphense.expand"
+    },
+    {
+        "key": "alt+6",
+        "command": "-workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "alt+6",
+        "command": "workbench.view.extension.codexViewContainer"
     }
 ]

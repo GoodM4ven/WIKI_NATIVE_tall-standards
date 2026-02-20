@@ -1,61 +1,62 @@
 ## VSCodium Extensions
 
-> [!NOTE]<br>Open Source Only
+> [!NOTE]
+> Open-source registry friendly setup.
 
-> [!WARNING]<br>Manual updates are required for the extensions that aren't published yet on [Open VSX](https://open-vsx.org)
+> [!WARNING]
+> Some extensions are not published on [Open VSX](https://open-vsx.org). Install and update those manually from their GitHub releases or the Visual Studio Marketplace links below.
 
-- [patbenatar.advanced-new-file](https://github.com/patbenatar/vscode-advanced-new-file)
-- [pcbowers.alpine-intellisense](https://github.com/pcbowers/alpine-intellisense) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=pcbowers.alpine-intellisense)]
-- [RisingStack.phoenix-alpinejs-syntax-highlight](https://github.com/RisingStack/astro-alpinejs-syntax-highlight) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=RisingStack.astro-alpinejs-syntax-highlight)]
-- [formulahendry.auto-rename-tag](https://github.com/formulahendry/vscode-auto-rename-tag)
-- [chouzz.vscode-better-align](https://github.com/chouzz/vscode-better-align)
-- [aaron-bond.better-comments](https://github.com/aaron-bond/better-comments)
-- [calebporzio.better-phpunit](https://github.com/calebporzio/better-phpunit) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=calebporzio.better-phpunit)]
-- [wmaurer.change-case](https://github.com/wmaurer/vscode-change-case)
-- [naumovs.color-highlight](https://github.com/enyancc/vscode-ext-color-highlight)
-- [Equinusocio.vsc-community-material-theme](https://github.com/material-theme/vsc-community-material-theme) (Darker High Contrast)
-- [moshfeu.compare-folders](https://github.com/moshfeu/vscode-compare-folders)
-- [cshum.convert-newline-list-to-array](https://github.com/colinshum/vsc-newline-to-array) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=cshum.convert-newline-list-to-array)]
-- [ctf0.env-symbol-provider](https://github.com/ctf0/env-symbol-provider.git) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.env-symbol-provider)]
-- [dbaeumer.vscode-eslint](https://github.com/Microsoft/vscode-eslint)
-- [sleistner.vscode-fileutils](https://github.com/sleistner/vscode-fileutils)
-- [prantlf.fold-on-open](https://github.com/prantlf/vscode-fold-on-open)
-- [wix.vscode-import-cost](https://github.com/wix/import-cost)
-- [albymor.increment-selection](https://github.com/albymor/Increment-Selection)
-- [shufo.vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter)
-- [onecentlin.laravel-blade](https://github.com/onecentlin/laravel-blade-snippets-vscode)
-- [IHunte.laravel-blade-wrapper](https://github.com/IHunte/Laravel-Blade-Wrapper) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=IHunte.laravel-blade-wrapper)]
-- [austenc.laravel-docs](https://github.com/austenc/vscode-laravel-docs) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-docs)]
-- [amiralizadeh9480.laravel-extra-intellisense](https://github.com/amir9480/vscode-laravel-extra-intellisense)
-- [ctf0.php-array-symbols](https://github.com/ctf0/vscode-php-array-symbol-provider) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.php-array-symbols)]
-- [ctf0.laravel-goto-config](https://github.com/ctf0/laravel-goto-config) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-config)]
-- [ctf0.laravel-goto-env](https://github.com/ctf0/laravel-goto-env) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-env)]
-- [ctf0.laravel-goto-lang](https://github.com/ctf0/laravel-goto-lang) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-lang)]
-- [ctf0.laravel-goto-path](https://github.com/ctf0/laravel-goto-path) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-path)]
-- [porifa.laravel-intelephense](https://github.com/porifa/vscode-laraphense)
-- [naoray.laravel-goto-components](https://github.com/Naoray/laravel-goto-components)
-- [austenc.livewire-docs](https://github.com/austenc/vscode-livewire-docs) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=austenc.livewire-docs)]
-- [m4tr1ck.livewire-goto-updated-3](https://github.com/m4tr1ck/vscode-livewire-goto) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=M4tr1ck.livewire-goto-updated-3)]
-- [bebo925.livewire-switcher](https://github.com/bebo925/livewire-switcher) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=bebo925.livewire-switcher)]
-- [bierner.markdown-checkbox](https://github.com/mjbvz/vscode-markdown-checkboxes) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox)]
-- [bierner.markdown-emoji](https://github.com/mjbvz/vscode-markdown-emoji) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)]
-- [bierner.markdown-preview-github-styles](https://github.com/mjbvz/vscode-github-markdown-preview-style)
-- [PKief.material-icon-theme](https://github.com/PKief/vscode-material-icon-theme)
-- [ryuta46.multi-command](https://github.com/ryuta46/vscode-multi-command)
-- [MehediDracula.php-constructor](https://github.com/MehediDracula/PHP-Constructor) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-constructor)]
-- [xdebug.php-debug](https://github.com/xdebug/vscode-php-debug)
-- [bmewburn.vscode-intelephense-client](https://github.com/bmewburn/vscode-intelephense)
-- [jeff-hykin.polacode-2019](https://github.com/jeff-hykin/polacode) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.polacode-2019)]
-- [csstools.postcss](https://github.com/csstools/postcss-language)
-- [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode)
-- [sainoba.px-to-rem](https://github.com/sainoba/vscode-px-to-rem)
-- [dbankier.vscode-quick-select](https://github.com/dbankier/vscode-quick-select) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-quick-select)]
-- [foxundermoon.shell-format](https://github.com/foxundermoon/vs-shell-format)
-- [jock.svg](https://github.com/lishu/vscode-svg2)
-- [albert.TabOut](https://github.com/albertromkes/tabout)
-- [bradlc.vscode-tailwindcss](https://github.com/tailwindlabs/tailwindcss-intellisense)
-- [austenc.tailwind-docs](https://github.com/austenc/vscode-tailwind-docs) [Not on VSX yet | [Market Link](https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs)]
-- [GoodM4ven.vsc-tailwind-shades-generator](https://github.com/GoodM4ven/vsc-tailwind-shades-generator)
-- [biati.vscode-text-tools](https://github.com/biati-digital/vscode-text-tools)
-- [Gruntfuggly.todo-tree](https://github.com/Gruntfuggly/todo-tree)
-- [hideoo.trailing](https://github.com/HiDeoo/trailing)
+- [patbenatar.advanced-new-file](https://github.com/patbenatar/vscode-advanced-new-file) [[OpenVSX](https://open-vsx.org/extension/patbenatar/advanced-new-file)]
+- [pcbowers.alpine-intellisense](https://github.com/pcbowers/alpine-intellisense) [[Market](https://marketplace.visualstudio.com/items?itemName=pcbowers.alpine-intellisense)]
+- [RisingStack.phoenix-alpinejs-syntax-highlight](https://github.com/RisingStack/astro-alpinejs-syntax-highlight) [[Market](https://marketplace.visualstudio.com/items?itemName=RisingStack.astro-alpinejs-syntax-highlight)]
+- [formulahendry.auto-rename-tag](https://github.com/formulahendry/vscode-auto-rename-tag) [[OpenVSX](https://open-vsx.org/extension/formulahendry/auto-rename-tag)]
+- [chouzz.vscode-better-align](https://github.com/chouzz/vscode-better-align) [[OpenVSX](https://open-vsx.org/extension/chouzz/vscode-better-align)]
+- [aaron-bond.better-comments](https://github.com/aaron-bond/better-comments) [[OpenVSX](https://open-vsx.org/extension/aaron-bond/better-comments)]
+- [calebporzio.better-phpunit](https://github.com/calebporzio/better-phpunit) [[Market](https://marketplace.visualstudio.com/items?itemName=calebporzio.better-phpunit)]
+- [wmaurer.change-case](https://github.com/wmaurer/vscode-change-case) [[OpenVSX](https://open-vsx.org/extension/wmaurer/change-case)]
+- [naumovs.color-highlight](https://github.com/enyancc/vscode-ext-color-highlight) [[OpenVSX](https://open-vsx.org/extension/naumovs/color-highlight)]
+- [JeronimoEkerdt.color-picker-universal](https://github.com/jeronimoek/color-picker-universal) [[OpenVSX](https://open-vsx.org/extension/JeronimoEkerdt/color-picker-universal)]
+- [GoodM4ven.extension-vsc-community-material-theme-darker-high-contrast](https://github.com/GoodM4ven/EXTENSION_VSC_community-material-theme-darker-high-contrast.git) [[OpenVSX](https://open-vsx.org/extension/GoodM4ven/extension-vsc-community-material-theme-darker-high-contrast)]
+- [moshfeu.compare-folders](https://github.com/moshfeu/vscode-compare-folders) [[OpenVSX](https://open-vsx.org/extension/moshfeu/compare-folders)]
+- [cshum.convert-newline-list-to-array](https://github.com/colinshum/vsc-newline-to-array) [[Market](https://marketplace.visualstudio.com/items?itemName=cshum.convert-newline-list-to-array)]
+- [ctf0.env-symbol-provider](https://github.com/ctf0/env-symbol-provider.git) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.env-symbol-provider)]
+- [dbaeumer.vscode-eslint](https://github.com/Microsoft/vscode-eslint) [[OpenVSX](https://open-vsx.org/extension/dbaeumer/vscode-eslint)]
+- [sleistner.vscode-fileutils](https://github.com/sleistner/vscode-fileutils) [[OpenVSX](https://open-vsx.org/extension/sleistner/vscode-fileutils)]
+- [prantlf.fold-on-open](https://github.com/prantlf/vscode-fold-on-open) [[OpenVSX](https://open-vsx.org/extension/prantlf/fold-on-open)]
+- [wix.vscode-import-cost](https://github.com/wix/import-cost) [[OpenVSX](https://open-vsx.org/extension/wix/vscode-import-cost)]
+- [albymor.increment-selection](https://github.com/albymor/Increment-Selection) [[OpenVSX](https://open-vsx.org/extension/albymor/increment-selection)]
+- [shufo.vscode-blade-formatter](https://github.com/shufo/vscode-blade-formatter) [[OpenVSX](https://open-vsx.org/extension/shufo/vscode-blade-formatter)]
+- [onecentlin.laravel-blade](https://github.com/onecentlin/laravel-blade-snippets-vscode) [[OpenVSX](https://open-vsx.org/extension/onecentlin/laravel-blade)]
+- [IHunte.laravel-blade-wrapper](https://github.com/IHunte/Laravel-Blade-Wrapper) [[Market](https://marketplace.visualstudio.com/items?itemName=IHunte.laravel-blade-wrapper)]
+- [austenc.laravel-docs](https://github.com/austenc/vscode-laravel-docs) [[Market](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-docs)]
+- [amiralizadeh9480.laravel-extra-intellisense](https://github.com/amir9480/vscode-laravel-extra-intellisense) [[OpenVSX](https://open-vsx.org/extension/amiralizadeh9480/laravel-extra-intellisense)]
+- [ctf0.laravel-goto-config](https://github.com/ctf0/laravel-goto-config) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-config)]
+- [ctf0.laravel-goto-env](https://github.com/ctf0/laravel-goto-env) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-env)]
+- [ctf0.laravel-goto-lang](https://github.com/ctf0/laravel-goto-lang) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-lang)]
+- [ctf0.laravel-goto-path](https://github.com/ctf0/laravel-goto-path) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.laravel-goto-path)]
+- [porifa.laravel-intelephense](https://github.com/porifa/vscode-laraphense) [[OpenVSX](https://open-vsx.org/extension/porifa/laravel-intelephense)]
+- [naoray.laravel-goto-components](https://github.com/Naoray/laravel-goto-components) [[Market](https://marketplace.visualstudio.com/items?itemName=naoray.laravel-goto-components)]
+- [austenc.livewire-docs](https://github.com/austenc/vscode-livewire-docs) [[Market](https://marketplace.visualstudio.com/items?itemName=austenc.livewire-docs)]
+- [m4tr1ck.livewire-goto-updated-3](https://github.com/m4tr1ck/vscode-livewire-goto) [[Market](https://marketplace.visualstudio.com/items?itemName=M4tr1ck.livewire-goto-updated-3)]
+- [bebo925.livewire-switcher](https://github.com/bebo925/livewire-switcher) [[Market](https://marketplace.visualstudio.com/items?itemName=bebo925.livewire-switcher)]
+- [bierner.markdown-checkbox](https://github.com/mjbvz/vscode-markdown-checkboxes) [[Market](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox)]
+- [bierner.markdown-emoji](https://github.com/mjbvz/vscode-markdown-emoji) [[Market](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)]
+- [PKief.material-icon-theme](https://github.com/PKief/vscode-material-icon-theme) [[OpenVSX](https://open-vsx.org/extension/PKief/material-icon-theme)]
+- [ryuta46.multi-command](https://github.com/ryuta46/vscode-multi-command) [[Market](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)]
+- [ctf0.php-array-symbols](https://github.com/ctf0/vscode-php-array-symbol-provider) [[Market](https://marketplace.visualstudio.com/items?itemName=ctf0.php-array-symbols)]
+- [MehediDracula.php-constructor](https://github.com/MehediDracula/PHP-Constructor) [[Market](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-constructor)]
+- [xdebug.php-debug](https://github.com/xdebug/vscode-php-debug) [[OpenVSX](https://open-vsx.org/extension/xdebug/php-debug)]
+- [bmewburn.vscode-intelephense-client](https://github.com/bmewburn/vscode-intelephense) [[OpenVSX](https://open-vsx.org/extension/bmewburn/vscode-intelephense-client)]
+- [jeff-hykin.polacode-2019](https://github.com/jeff-hykin/polacode) [[Market](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.polacode-2019)]
+- [csstools.postcss](https://github.com/csstools/postcss-language) [[OpenVSX](https://open-vsx.org/extension/csstools/postcss)]
+- [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode) [[OpenVSX](https://open-vsx.org/extension/esbenp/prettier-vscode)]
+- [sainoba.px-to-rem](https://github.com/sainoba/vscode-px-to-rem) [[OpenVSX](https://open-vsx.org/extension/sainoba/px-to-rem)]
+- [dbankier.vscode-quick-select](https://github.com/dbankier/vscode-quick-select) [[Market](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-quick-select)]
+- [jock.svg](https://github.com/lishu/vscode-svg2) [[OpenVSX](https://open-vsx.org/extension/jock/svg)]
+- [albert.TabOut](https://github.com/albertromkes/tabout) [[OpenVSX](https://open-vsx.org/extension/albert/TabOut)]
+- [bradlc.vscode-tailwindcss](https://github.com/tailwindlabs/tailwindcss-intellisense) [[OpenVSX](https://open-vsx.org/extension/bradlc/vscode-tailwindcss)]
+- [austenc.tailwind-docs](https://github.com/austenc/vscode-tailwind-docs) [[Market](https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs)]
+- [GoodM4ven.vsc-tailwind-shades-generator](https://github.com/GoodM4ven/vsc-tailwind-shades-generator) [[OpenVSX](https://open-vsx.org/extension/GoodM4ven/vsc-tailwind-shades-generator)]
+- [biati.vscode-text-tools](https://github.com/biati-digital/vscode-text-tools) [[OpenVSX](https://open-vsx.org/extension/biati/vscode-text-tools)]
+- [Gruntfuggly.todo-tree](https://github.com/Gruntfuggly/todo-tree) [[OpenVSX](https://open-vsx.org/extension/Gruntfuggly/todo-tree)]
+- [hideoo.trailing](https://github.com/HiDeoo/trailing) [[OpenVSX](https://open-vsx.org/extension/hideoo/trailing)]

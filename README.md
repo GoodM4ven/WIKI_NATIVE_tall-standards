@@ -1,28 +1,29 @@
-# TALL STANDARDS
+# TALL Standards v2
 
-Check out the complete [Wiki](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki) for the knowledge base.
+## Table of Contents
 
-### Table of Content
+[A] Development:
 
-[A] TALL-Stack:
-
-- [**T**ailwindCSS](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-01-%E2%80%90-Taliwind)
-- [**A**lpineJS](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-02-%E2%80%90-Alpine)
-- [**L**ivewire](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-03-%E2%80%90-Livewire)
-- [**L**aravel](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-04-%E2%80%90-Laravel)
-- [FilamentPHP](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-05-%E2%80%90-Filament)
-- [PestPHP](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/A-%E2%80%90-%5BTALL%5D-%E2%80%90-06-%E2%80%90-Pest)
+- [Environment](./docs/dev/environment.md) ([Ubuntu](https://ubuntu.com))
+- [Bash](./docs/dev/bash.md)
+- [IDE](./docs/dev/ide.md) ([`codium`](https://vscodium.com/))
+  - Check the repository files for settings, snippets, keybindings, and more.
+  - A script is available to download the VSC extensions used by this stack in one run.
+    - You can then **bulk select all** those `vsix` files to install in VSC.
+- [Version Control](./docs/dev/version-control.md)
 
 [B] The Web:
 
-- [HTML](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/B-%E2%80%90-%5BWEB%5D-%E2%80%90-01-%E2%80%90-HTML)
-- [CSS](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/B-%E2%80%90-%5BWEB%5D-%E2%80%90-02-%E2%80%90-CSS)
-- [JS](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/B-%E2%80%90-%5BWEB%5D-%E2%80%90-03-%E2%80%90-JS)
-- [PHP](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/B-%E2%80%90-%5BWEB%5D-%E2%80%90-04-%E2%80%90-PHP)
+- [HTML](./docs/web/html.md)
+- [CSS](./docs/web/css.md)
+- [JS](./docs/web/js.md)
+- [PHP](./docs/web/php.md)
 
-[C] Development:
+[C] TALL Stack:
 
-- [Environment](#)
-- [IDE](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/C-%E2%80%90-%5BDEV%5D-%E2%80%90-02-%E2%80%90-IDE)
-  - [VSCodium](https://vscodium.com/): Check out the repository files for settings, snippets, keybidngs and more...
-- [Version Control](https://github.com/VPremiss/WIKI_WEB_tall-standards/wiki/C-%E2%80%90-%5BDEV%5D-%E2%80%90-03-%E2%80%90-Version-Control)
+- [**T**ailwindCSS](./docs/tall/tailwindcss.md) (v4)
+- [**A**lpineJS](./docs/tall/alpinejs.md) (v3)
+- [**L**ivewire](./docs/tall/livewire.md) (v4)
+- [**L**aravel](./docs/tall/laravel.md) (v12)
+- [FilamentPHP](./docs/tall/filamentphp.md) (v5)
+- [PestPHP](./docs/tall/pestphp.md) (v4)

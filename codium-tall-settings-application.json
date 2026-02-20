@@ -1,3 +1,6 @@
 {
-    "window.menuBarVisibility": "hidden"
+    "window.menuBarVisibility": "hidden",
+    "window.customMenuBarAltFocus": false,
+    "window.customTitleBarVisibility": "auto",
+    "window.titleBarStyle": "custom",
 }

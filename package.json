@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@openai/codex": "^0.104.0",
+    "vsix-extension-manager": "^2.0.0"
+  }
+}

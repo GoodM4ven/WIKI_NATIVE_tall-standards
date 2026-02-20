@@ -13,9 +13,17 @@
     "editor.fontSize": 14,
     "editor.lineHeight": 2,
     "editor.fontLigatures": true,
+    // * =======
+    // * Format
+    // * =====
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 130,
     // * =========
     // * Behavior
     // * =======
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.stickyScroll.enabled": false,
     "workbench.tree.enableStickyScroll": false,
@@ -30,6 +38,7 @@
         "**/vendor": true
     },
     "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.linkedEditing": true,
     "workbench.activityBar.location": "hidden",
     "workbench.startupEditor": "none",
@@ -39,6 +48,10 @@
     "explorer.confirmDelete": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.localHistory.maxFileEntries": 500,
+    "window.commandCenter": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
     // "files.exclude": {
     //     "**/.git": true,
     //     "**/node_modules": true,
@@ -46,19 +59,21 @@
     // },
     "editor.codeLens": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    // * =======
-    // * Format
-    // * =====
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 130,
+    "javascript.validate.enable": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "chatgpt.commentCodeLensEnabled": false,
     // * ====================
     // * Built-in Extensions
     // * ==================
+    "npm.packageManager": "bun",
     "git.enabled": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.terminalAuthentication": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "git.replaceTagsWhenPull": true,
     // ?
     // ? ===========
     // ? Extensions
@@ -74,33 +89,69 @@
             "editor.wordHighlightBackground": "#66666699"
         }
     },
-    // * [UI - SVG]
-    "svg.preview.mode": "svg",
-    "svg.preview.autoShow": true,
+    "editor.tokenColorCustomizations": {
+        "[Community Material Theme Darker High Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "foreground": "#656565"
+                    }
+                }
+            ]
+        }
+    },
     // * [Behavior - Todo Tree]
     "todo-tree.tree.showBadges": true,
     "todo-tree.tree.showCountsInTree": true,
-    "todo-tree.general.tags": ["BUG", "HACK", "TODO", "[ ]"],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|\\{\\{--|\\{\\{--|^\\s*\\*|^)\\s*($TAGS)",
-    "todo-tree.filtering.excludeGlobs": ["**/node_modules", "**/vendor"],
+    "todo-tree.general.tags": ["BUG", "HACK", "TODO"],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|\\{\\{--|^\\s*\\*|^\\s*)\\s*($TAGS)",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules/**",
+        "**/vendor/**",
+        "**/storage/**",
+        "**/bootstrap/cache/**",
+        "**/public/storage/**",
+        "**/public/build/**",
+        "**/.git/**",
+        "**/.cache/**"
+    ],
     // * [Behavior - Compare Folders]
     "diffEditor.maxComputationTime": 0,
+    // * [Behavior - Color Picker Universal]
+    "color-picker-universal.formatsTo": [
+        "*",
+        "!cmyk",
+        "hex",
+        "hsl",
+        "!hwb",
+        "!named",
+        "rgb",
+        "!hex0x",
+        "!lab",
+        "!lch",
+        "!oklab",
+        "oklch",
+        "!a98"
+    ],
     // * ==============
     // * Specification
     // * ============
     // * [INTEL - Phoenix Alpine.js Syntax Highlight]
     "alpine-intellisense.settings.languageScopes": "blade",
     // * [INTEL - shell-format]
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
-    "shellformat.effectLanguages": ["shellscript", "dockerfile", "dotenv", "gitignore"],
     "[php]": {
         // * [Fold On Open]
         // "foldOnOpen.targets": ["AllBlockComments"],
         // * [PHP Intelephense]
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
+    // * [Format - ESLint]
+    "eslint.validate": ["javascript"],
+    "eslint.useFlatConfig": false,
+    "eslint.format.enable": true,
+    "eslint.run": "onType",
+    "eslint.workingDirectories": [{ "mode": "auto" }],
     // * [Format - Laravel Blade formatter]
     "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter"
@@ -122,11 +173,27 @@
     // * [INTEL - PHP Intelephense]
     // ! Disable @builtin php > PHP Language Features
     // ! Enter your Intelephense licence key in your application's [settings.json] (not workspace, not the user)
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Tests,tests}/**",
+        "**/.history/**",
+        "**/vendor/**/vendor/**",
+        "**/.drafts/**"
+    ],
     "intelephense.telemetry.enabled": false,
     // * [INTEL - Tailwind CSS IntelliSense]
     "files.associations": {
         "*.module": "php",
         "*.css": "tailwindcss"
+    },
+    "tailwindCSS.includeLanguages": {
+        "blade": "html"
     },
     "tailwindCSS.classAttributes": [
         "class",
@@ -138,12 +205,21 @@
         "x-transition:leave-end"
     ],
     "tailwindCSS.experimental.classRegex": [
-        ["(?:@class|\\$attributes->class)\\(\\[?([^\\]]*)\\]?\\)", "'([^']*)'"],
-        ["(?:@twMerge|\\$attributes->twMerge)\\(\\[?([^\\]]*)\\]?\\)", "'([^']*)'"],
-        ["twMerge\\(\\[?([^\\]]*)\\]?\\)", "'([^']*)'"],
-        ["TailwindMerge\\:\\:merge\\(\\[?([^\\]]*)\\]?\\)", "'([^']*)'"],
-        ["\\$attributes->twMerge\\(([^)]*)\\)", "(\"[^\"]*\"|'[^']*')"]
+        [
+            "(?:@class|\\$attributes->class)\\(\\s*\\[((?:(?:\"(?:\\\\.|[^\"\\\\])*\")|(?:'(?:\\\\.|[^'\\\\])*')|[^\\]\"'])*)\\]\\s*\\)",
+            "'([^']+)'"
+        ],
+        [
+            "(?:@class|\\$attributes->class)\\(\\s*\\[((?:(?:\"(?:\\\\.|[^\"\\\\])*\")|(?:'(?:\\\\.|[^'\\\\])*')|[^\\]\"'])*)\\]\\s*\\)",
+            "\"([^\"]+)\""
+        ],
+        ["(?:@class|\\$attributes->class)\\(([^)]*)\\)", "'([^']+)'"],
+        ["(?:@class|\\$attributes->class)\\(([^)]*)\\)", "\"([^\"]+)\""],
+        ["\\.classList\\.(?:add|remove|toggle|replace)\\(([\\s\\S]*?)\\)", "'([^']+)'"],
+        ["\\.classList\\.(?:add|remove|toggle|replace)\\(([\\s\\S]*?)\\)", "\"([^\"]+)\""],
+        ["\\.classList\\.(?:add|remove|toggle|replace)\\(([\\s\\S]*?)\\)", "`([^`]+)`"]
     ],
+    "tailwindCSS.lint.invalidConfigPath": "ignore",
     // * [INTEL - Laraphense]
     "laraphense.disableAssetCompletion": true,
     "laraphense.disableBladeCompletion": true,
@@ -156,5 +232,5 @@
     "laraphense.disableValidationCompletion": true,
     "laraphense.disableViewCompletion": true,
     "laraphense.expandLeadingNamespaceSeparator": true,
-    "laraphense.autoSortAfterImport": true
+    "laraphense.autoSortAfterImport": true,
 }

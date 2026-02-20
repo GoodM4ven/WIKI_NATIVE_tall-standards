@@ -1,20 +1,70 @@
 {
-	  "HTML Comment": {
-	  	  "prefix": "htcomm",
-	  	  "body": ["<!-- $1 -->$0"]
-	  },
-	  "Alpine Transitions": {
-	  	  "prefix": "xtransition",
-	  	  "body": [
-			      "x-transition:enter=\"transition ease-out duration-300\" x-transition:enter-start=\"opacity-0\"",
-			      "x-transition:enter-end=\"opacity-100\" x-transition:leave=\"transition ease-in duration-300\"",
-			      "x-transition:leave-start=\"opacity-100\" x-transition:leave-end=\"opacity-0\""
-	  	  ]
-	  },
-	  "Alpine Show State": {
-	  	  "prefix": "xshow",
-	  	  "body": [
-			      "x-data=\"{ show: false }\" x-cloak x-show=\"show\" x-transition x-init=\"$$nextTick(() => show = true)\""
-	  	  ]
-	  }
+	"Blade Formatter Ignore Block": {
+		"prefix": "bladeignore",
+		"scope": "blade",
+		"description": "Wrap selection with blade-formatter disable/enable comments",
+		"body": [
+			"{{-- blade-formatter-disable --}}",
+			"${TM_SELECTED_TEXT:$1}",
+			"{{-- blade-formatter-enable --}}"
+		]
+	},
+	"HTML Comment": {
+	  	"prefix": "htcomm",
+	  	"body": ["<!-- $1 -->$0"]
+	},
+	"HTML Credits Comment": {
+		"prefix": "creds",
+		"body": ["<!-- Credits: $1 -->$0"]
+	},
+	"Alpine Transitions": {
+	  	"prefix": "xtransition",
+	  	"body": [
+			"x-data=\"{ intersected: false }\" x-intersect=\"intersected = true\" x-cloak x-show=\"intersected\"",
+			"x-transition:enter=\"transition ease-out duration-300\" x-transition:enter-start=\"opacity-0\"",
+			"x-transition:enter-end=\"opacity-100\" x-transition:leave=\"transition ease-in duration-300\"",
+			"x-transition:leave-start=\"opacity-100\" x-transition:leave-end=\"opacity-0\""
+	  	]
+	},
+	"Alpine Show State": {
+	  	"prefix": "xshow",
+	  	"body": [
+			"x-data=\"{ show: false }\" x-cloak x-show=\"show\" x-transition x-init=\"() => $$nextTick(() => show = true)\""
+	  	]
+	},
+	"Alpine Active State": {
+	  	"prefix": "xactive",
+	  	"body": [
+			"x-data=\"{ active: false }\" x-on:mouseup=\"active = false\" x-on:mousedown=\"active = true\""
+	  	]
+	},
+	"Alpine Locked Hovering": {
+	  	"prefix": "xlockedhover",
+	  	"body": [
+			"x-data=\"{",
+			"    hovered: false,",
+			"    locked: false,",
+			"    unhoverTimeout: null,",
+			"    tryToUnhover() {",
+			"        if (this.unhoverTimeout) {",
+			"            clearTimeout(this.unhoverTimeout);",
+			"        }",
+			"",
+			"        this.unhoverTimeout = setTimeout(() => {",
+			"            if (!this.locked) {",
+			"                this.hovered = false;",
+			"            }",
+			"        }, 700);",
+			"    },",
+			"}\"",
+			"x-on:mouseenter=\"hovered = true; locked = true; setTimeout(() => locked = false, 200);\"",
+			"x-on:mouseleave=\"tryToUnhover()\""
+	  	]
+	},
+	"TailwindCSS Merge Conditionally": {
+	  	"prefix": "twmergeif",
+	  	"body": [
+			"{{ $$attributes->twMerge(Arr::toCssClasses([$0])) }}"
+	  	]
+	}
 }

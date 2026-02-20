@@ -12,9 +12,9 @@
 		"prefix": "strphp",
 		"body": [
 			"<?php",
-      "",
+			"",
 			"declare(strict_types = 1);",
-      "",
+			"",
 			"$0",
 		],
 		"description": "Declare PHP with strict-typing"
