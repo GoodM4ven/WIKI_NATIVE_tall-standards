@@ -2,9 +2,11 @@
 
 [Pest](https://pestphp.com) provides a concise testing API on top of [PHPUnit](https://phpunit.de/index.html).
 
+
 # Tips
 
 ## Precautions
+
 
 - Keep test names descriptive and stable. If your CI/reporting tooling has trouble with punctuation, prefer plain text names.
 

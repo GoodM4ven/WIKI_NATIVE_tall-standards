@@ -5,6 +5,7 @@ Install the Graphite CLI with your package manager of choice (for example [bun](
 > [!NOTE]
 > Graphite command options can change across versions. If a command differs in your setup, check `gt <command> --help`.
 
+
 # Workflow
 
 ## Initialization
@@ -13,6 +14,7 @@ Install the Graphite CLI with your package manager of choice (for example [bun](
 - If Git is not initialized yet (no `.git` directory), run `git init` first.
 - Run `gt init`.
 - Configure trunk branch settings with `gt config`.
+
 
 ## Pull Request Flow (Including Stacks)
 
@@ -25,6 +27,7 @@ Install the Graphite CLI with your package manager of choice (for example [bun](
 7. Submit with `gt submit`. Use `gt submit --stack` when submitting multiple related branches.
 8. After merges, go back to your trunk branch and run `gt sync` to clean local stacked branches and sync state.
 
+
 ## Trunking (Choosing a Base Branch)
 
 1. Start with an up-to-date `main` branch (`gt checkout main` then `gt sync`).
@@ -33,6 +36,7 @@ Install the Graphite CLI with your package manager of choice (for example [bun](
 4. Submit and merge the setup branch.
 5. Set your repository trunk to `dev` in `gt config`.
 6. Run `gt sync` again to align local branch state.
+
 
 ## Keeping Sub-Trunks Up to Date
 

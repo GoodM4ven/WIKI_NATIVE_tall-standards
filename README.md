@@ -1,6 +1,6 @@
 # TALL Standards v2
 
-## Table of Contents
+### Table of Contents
 
 [A] Development:
 
